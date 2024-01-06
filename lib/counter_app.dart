@@ -57,6 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Text(
+                'This is a simple app. Its main purpose is to demonstrate the use of BDD tests. Check out the tests in the test folder.',
+                style: Theme.of(context).textTheme.titleMedium,
+                textAlign: TextAlign.center,
+              ),
+            ),
+            const SizedBox(height: 48),
             const Text(
               'You have pushed the button this many times:',
             ),
